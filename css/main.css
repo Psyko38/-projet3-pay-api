@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Display:regular,italic);
+
+:root {
+	--Light-San-Juan-Blue: #6c8294;
+	--Dark-Pink: #ba4270;
+	--Charm-Pink: #da6d97;
+}
+
+* {
+	font-family: DM Serif Display;
+}
+
+h1 {
+	font-family: DM Serif Display;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-rows: 1fr;
+}
+
+.header-p1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-p2 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header-p1 > a {
+	display: none;
+}
+
+.header-p2 > .Demo {
+	background-color: var(--Dark-Pink);
+	padding: 10px 20px 10px 20px;
+	border-radius: 30px;
+	border: 0;
+	display: none;
+	color: white;
+}
+
+.header-p2 > .Demo:hover {
+	background-color: var(--Charm-Pink);
+}
+
+.BurgerKing {
+	background-color: transparent;
+	border: 0;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+a {
+	color: var(--Light-San-Juan-Blue);
+	text-decoration: none;
+}
+
+@media screen and (min-width: 720px) {
+	.header-p2 > .Demo {
+		display: block;
+	}
+
+	.header-p2 > .BurgerKing {
+		display: none;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.header-p1 > a {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	header {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 1fr;
+	}
+}
