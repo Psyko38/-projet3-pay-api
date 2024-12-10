@@ -5,91 +5,147 @@
 	--Light-San-Juan-Blue: #6c8294;
 	--Dark-Pink: #ba4270;
 	--Charm-Pink: #da6d97;
-}
-
-* {
-	font-family: DM Serif Display;
+	--Link-Water-White: #fbfcfe;
+	font-family: Public Sans;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 17.63px;
 }
 
 h1 {
 	font-family: DM Serif Display;
+	font-weight: 400;
+	font-size: 32px;
 }
 
 header {
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 1fr;
 }
 
-.header-p1 {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.header-p2 {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-}
-
-.header-p1 > a {
+nav > ul {
 	display: none;
+}
+
+.header-p2 > .BurgerKing {
+	background-color: transparent;
+	border: 0;
+	display: unset;
 }
 
 .header-p2 > .Demo {
-	background-color: var(--Dark-Pink);
-	padding: 10px 20px 10px 20px;
-	border-radius: 30px;
-	border: 0;
 	display: none;
-	color: white;
+	border-radius: 1000px;
+	background-color: var(--Dark-Pink);
+	color: var(--white);
+	border: 0;
+	padding: 10px 15px 10px 15px;
 }
 
 .header-p2 > .Demo:hover {
 	background-color: var(--Charm-Pink);
 }
 
-.BurgerKing {
-	background-color: transparent;
-	border: 0;
+.header-p2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+nav {
+	display: flex;
+	align-items: center;
 }
 
-a {
+nav > ul > li {
+	list-style-type: none;
+}
+
+nav > ul > li > a {
 	color: var(--Light-San-Juan-Blue);
 	text-decoration: none;
 }
 
-@media screen and (min-width: 720px) {
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+
+form > * {
+	border-radius: 300px;
+	border: 0;
+	padding: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+form > input {
+	box-shadow: 10px 10px 25px -10px #36536b40;
+	background-color: var(--Link-Water-White);
+}
+
+form > button {
+	background-color: var(--Dark-Pink);
+	color: white;
+}
+
+.mainInfo > p,
+a {
+	text-decoration: none;
+	color: var(--Light-San-Juan-Blue);
+}
+
+.mainInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+	nav > ul {
+		display: unset;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas: 1fr;
+	}
+
 	.header-p2 > .Demo {
-		display: block;
+		display: unset;
 	}
 
 	.header-p2 > .BurgerKing {
 		display: none;
 	}
 
-	header {
-		display: grid;
-		grid-template-columns: 3fr 1fr;
-		grid-template-rows: 1fr;
-	}
-
-	.header-p1 > a {
-		display: block;
+	main {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1023px) {
 	header {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		grid-template-rows: 1fr;
+		grid-template-areas: 1fr;
 	}
 }
