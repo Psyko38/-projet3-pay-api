@@ -4,14 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=7, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/components/buttons.css" />
+		<link rel="stylesheet" href="css/pages/home.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
-				<a href="/index.html"
+				<a href="index.html"
 					><img src="assets/LogoPayAPI.svg" alt="Logo Of PayAPI" />
 				</a>
 				<ul>
@@ -27,7 +29,7 @@
 				</ul>
 			</nav>
 			<div class="header-p2">
-				<button class="Demo">Schedule a Demo</button>
+				<button class="btn-primary-light">Schedule a Demo</button>
 				<button class="BurgerKing">
 					<img src="assets/BurgerMenu.svg" alt="BurgerMenu" />
 				</button>
@@ -38,7 +40,9 @@
 				<img src="assets/Mobile.svg" alt="Mobile Image" />
 			</div>
 			<div class="mainInfo">
-				<h1>Start building with our APIs for absolutely free.</h1>
+				<h1 class="h1-large">
+					Start building with our APIs for absolutely free.
+				</h1>
 				<form class="Schedule" action="Schedule">
 					<label for="Email"></label>
 					<input
@@ -47,7 +51,7 @@
 						name="Email"
 						placeholder="Enter email address"
 					/>
-					<button>Schedule a Demo</button>
+					<button class>Schedule a Demo</button>
 				</form>
 				<p>
 					Have any questions?
@@ -55,13 +59,16 @@
 				</p>
 			</div>
 		</main>
-		<footer>
-			<img src="assets/LogoTesla.svg" alt="Tesla" />
-			<img src="assets/LogoMicrosoft.svg" alt="Microsoft" />
-			<img src="assets/LogoHP.svg" alt="HP" />
-			<img src="assets/LogoGoogle.svg" alt="Google" />
-			<img src="assets/LogoNvidia.svg" alt="Nvidia" />
-			<h1>Who we work with</h1>
+		<article>
+			<div class="Partenaires">
+				<img src="assets/LogoTesla.svg" alt="Tesla" />
+				<img src="assets/LogoMicrosoft.svg" alt="Microsoft" />
+				<img src="assets/LogoHP.svg" alt="HP" />
+				<img src="assets/LogoOracle.svg" alt="Oracle" />
+				<img src="assets/LogoGoogle.svg" alt="Google" />
+				<img src="assets/LogoNvidia.svg" alt="Nvidia" />
+			</div>
+			<h2>Who we work with</h2>
 			<p>
 				Today, millions of people around the world have successfully
 				connected their accounts to apps they love using our API. We
@@ -69,6 +76,6 @@
 				accessible experiences for their users.
 			</p>
 			<button><a href="page/about.html">About Us</a></button>
-		</footer>
+		</article>
 	</body>
 </html>
