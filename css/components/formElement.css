@@ -1,0 +1,14 @@
+.fe-text-field {
+	background-color: transparent;
+	color: var(--San-Juan-Blue);
+	opacity: 50%;
+}
+
+.fe-text-field:active {
+	opacity: 0%;
+}
+
+.fe-text-field:active {
+	color: #ff0000; /* This is not in the Style Guid */
+	opacity: 50%;
+}

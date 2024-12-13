@@ -1,0 +1,8 @@
+.checkbox.normal {
+	background-color: var(--San-Juan-Blue);
+	opacity: 25%;
+}
+
+.checkbox.normal:hover {
+	background-color: var(--Dark-Pink);
+}
