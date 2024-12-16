@@ -18,7 +18,9 @@
 .btn-secondary-light {
 	background-color: transparent;
 	color: var(--Link-Water-White);
-	border: var(--Link-Water-White) 1px solid;
+	border: 1px var(--Link-Water-White) solid;
+	border-radius: 999px;
+	padding: 5px 20px;
 }
 
 .btn-secondary-light:hover {
@@ -34,6 +36,9 @@
 	border: 1px solid var(--San-Juan-Blue);
 	background-color: transparent;
 	color: var(--San-Juan-Blue);
+	border-radius: 999px;
+	border: none;
+	padding: 5px 20px;
 }
 
 .btn-secondary-dark {
@@ -44,4 +49,3 @@
 .btn-secondary-dark:disabled {
 	opacity: 50%;
 }
-

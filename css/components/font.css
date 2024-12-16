@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Display:regular,italic);
+
+:root {
+	font-family: Public Sans;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 17.63px;
+}
+
+.h1-large {
+	font-family: DM Serif Display;
+	font-size: 5rem;
+	line-height: 5rem;
+	color: var(--San-Juan-Blue);
+}
+
+.h1-small {
+	font-family: DM Serif Display;
+	font-size: 4.333rem;
+	line-height: 4.333rem;
+	color: var(--San-Juan-Blue);
+}
+
+h2 {
+	font-family: DM Serif Display;
+	font-size: 3.2rem;
+	line-height: 4.333rem;
+	color: var(--San-Juan-Blue);
+}
+
+.h3-big {
+	font-family: DM Serif Display;
+	font-size: 1.2rem;
+	line-height: 1.667rem;
+	color: var(--San-Juan-Blue);
+}
+
+.h3-small {
+	font-family: Public Sans;
+	font-size: 1.2rem;
+	line-height: 1.667rem;
+	color: var(--San-Juan-Blue);
+}
+
+h4 {
+	font-family: DM Serif Display;
+	font-size: 1.6rem;
+	line-height: 2.133rem;
+	color: var(--San-Juan-Blue);
+}

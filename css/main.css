@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=DM+Serif+Display:regular,italic);
-
 :root {
 	--Light-San-Juan-Blue: #6c8294;
 	--Dark-Pink: #ba4270;
@@ -9,25 +6,6 @@
 	--Mirage-Blue: #1b262f;
 	--San-Juan-Blue: #36536b;
 	--Charm-Pink-Actives: #da6d97;
-	font-family: Public Sans;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 17.63px;
-}
-
-.h1-large {
-	font-family: DM Serif Display;
-	font-size: 72px;
-	line-height: 72px;
-	color: var(--San-Juan-Blue);
-}
-
-h1 {
-	font-family: DM Serif Display;
-}
-
-.mainIMG > img {
-	height: 40vh;
 }
 
 header {
@@ -84,107 +62,6 @@ nav > ul > li > a {
 	text-decoration: none;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-	align-items: center;
-	justify-items: center;
-	max-width: 1100px;
-	padding-bottom: 50px;
-}
-
-form > label {
-	display: none;
-}
-
-form {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	justify-items: center;
-}
-
-form > * {
-	border-radius: 300px;
-	border: 0;
-	padding: 15px;
-	width: 80%;
-	margin-bottom: 15px;
-}
-
-form > input {
-	box-shadow: 10px 10px 25px -10px #36536b40;
-	background-color: var(--Link-Water-White);
-}
-
-form > button {
-	background-color: var(--Dark-Pink);
-	color: white;
-}
-
-.mainInfo > p,
-a {
-	text-decoration: none;
-	color: var(--Light-San-Juan-Blue);
-}
-
-.mainInfo > a {
-	font-weight: bolder;
-}
-
-.mainInfo > h1 {
-	text-align: center;
-}
-
-.mainInfo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-article {
-	background-color: var(--Mirage-Blue);
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	gap: 15px;
-	justify-items: center;
-	padding: 25% 15% 25% 15%;
-	height: 100vh;
-}
-
-article > .Partenaires {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	justify-items: center;
-	gap: 15px;
-	width: 80%;
-}
-
-article > h2 {
-	color: var(--Link-Water-White);
-	font-family: DM Serif Display;
-	font-size: 2.133rem;
-}
-
-article > p {
-	color: var(--San-Juan-Blue);
-	opacity: 70%;
-	font-family: Public Sans;
-	font-size: 1.067rem;
-	text-align: center;
-}
-
-article > button {
-	background-color: transparent;
-	border-radius: 666px;
-	border: 1px white solid;
-	padding: 5px 20px 5px 20px;
-}
-
 @media screen and (min-width: 768px) {
 	nav > ul {
 		display: unset;
@@ -206,40 +83,5 @@ article > button {
 
 	.header-p2 > .BurgerKing {
 		display: none;
-	}
-
-	main {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}
-
-	form {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(1, 1fr);
-		box-shadow: 10px 10px 25px -10px #36536b40;
-		background-color: var(--Link-Water-White);
-		border-radius: 666px;
-	}
-
-	form > * {
-		width: 100%;
-		height: 100%;
-	}
-
-	form > input {
-		box-shadow: none;
-	}
-
-	form > h1 {
-		font-size: 3rem;
-	}
-}
-
-@media screen and (min-width: 1023px) {
-	header {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-template-areas: 1fr;
 	}
 }

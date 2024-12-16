@@ -1,0 +1,141 @@
+.mainInfo > p,
+a {
+	text-decoration: none;
+	color: var(--Light-San-Juan-Blue);
+}
+
+.mainIMG > img {
+	height: 40vh;
+}
+
+.mainInfo > a {
+	font-weight: bolder;
+}
+
+.mainInfo > h1 {
+	text-align: center;
+}
+
+.mainInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.mainInfo > h1 {
+	padding-bottom: 15px;
+}
+
+.HomeMain {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	max-width: 1100px;
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+section.SecPartenaires {
+	background-color: var(--Mirage-Blue);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	height: 70vh;
+	padding: 50px;
+}
+
+section.SecPartenaires > .Partenaires {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	justify-items: center;
+	min-height: 200px;
+	width: 50%;
+}
+
+section.SecPartenaires > .PartenairesInfo > p {
+	color: var(--Link-Water-White);
+	font-family: Public Sans;
+	font-size: 1rem;
+}
+
+section.SecPartenaires > .PartenairesInfo {
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+section.SecPartenaires > .PartenairesInfo > h2 {
+	color: var(--Link-Water-White);
+}
+
+form.Schedule > label {
+	display: none;
+}
+
+form.Schedule {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+}
+
+form.Schedule > * {
+	border-radius: 300px;
+	border: 0;
+	padding: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	form.Schedule {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		box-shadow: 10px 10px 25px -10px #36536b40;
+		background-color: var(--Link-Water-White);
+		border-radius: 666px;
+	}
+
+	.HomeMain {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	form > * {
+		width: 100%;
+		height: 100%;
+	}
+
+	section.SecPartenaires {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+	}
+	.Partenaires {
+		order: 1;
+	}
+
+	section.SecPartenaires > .PartenairesInfo {
+		align-items: flex-start;
+		justify-content: space-between;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	header {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 1fr;
+	}
+}
