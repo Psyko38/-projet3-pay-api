@@ -73,6 +73,10 @@ section.SecPartenaires > .PartenairesInfo {
 	text-align: center;
 }
 
+section.SecPartenaires > .PartenairesInfo > button > a {
+	color: var(--Link-Water-White);
+}
+
 section.SecPartenaires > .PartenairesInfo > h2 {
 	color: var(--Link-Water-White);
 }
@@ -96,6 +100,133 @@ form.Schedule > * {
 	margin-bottom: 15px;
 }
 
+.Easy-to-implement-Text {
+	color: var(--Light-San-Juan-Blue);
+}
+
+.Easy-to-implement-Text > h3,
+.Simple-UI-e-UX-Text > h3 {
+	font-family: DM Serif Display;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+	color: var(--San-Juan-Blue);
+}
+
+.Easy-to-implement,
+.Simple-UI-e-UX {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	height: 80vh;
+}
+
+.Easy-to-implement-Text,
+.Simple-UI-e-UX-Text {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	text-align: center;
+}
+
+.Easy-to-implement-Text > p,
+.Simple-UI-e-UX-Text > p {
+	font-family: Public Sans;
+	font-size: 1.067rem;
+	color: var(--Light-San-Juan-Blue);
+}
+
+.Simple-UI-e-UX-img {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.Simple-UI-e-UX-Text {
+	order: 1;
+}
+
+.Easy-to-implement,
+.Simple-UI-e-UX {
+	width: 100%;
+}
+
+.Schedule > input {
+	background-color: var(--Link-Water-White);
+	box-shadow: 10px 10px 25px -10px #36536b40;
+}
+
+.AvIMG {
+	height: 100px;
+	width: 100px;
+	background-color: var(--San-Juan-Blue);
+	border-radius: 666px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Av1,
+.Av2,
+.Av3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+
+.Av1 > p,
+.Av2 > p,
+.Av3 > p {
+	text-align: center;
+}
+
+.AMDaventage {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 50px;
+	padding: 100px 5%;
+}
+
+.AvIMG {
+	font-family: Public Sans;
+	font-size: 1.067rem;
+}
+
+.Schedule-a-demo {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 0px 5%;
+}
+
+.Schedule-a-demo > h2 {
+	font-size: 2.133rem;
+}
+
+footer {
+	margin-top: 50px;
+	padding: 25px 0px;
+	background-color: var(--Mirage-Blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 30vh;
+}
+
+footer > ul > li {
+	list-style: none;
+}
+
+.SocialMedia {
+	display: flex;
+	gap: 15px;
+}
+
 @media screen and (min-width: 768px) {
 	form.Schedule {
 		display: grid;
@@ -104,6 +235,11 @@ form.Schedule > * {
 		box-shadow: 10px 10px 25px -10px #36536b40;
 		background-color: var(--Link-Water-White);
 		border-radius: 666px;
+	}
+
+	.Schedule > input {
+		background-color: transparent;
+		box-shadow: none;
 	}
 
 	.HomeMain {
@@ -116,11 +252,29 @@ form.Schedule > * {
 		height: 100%;
 	}
 
+	.AMDaventage {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 50px;
+		padding-top: 100px;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	header {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 1fr;
+	}
+
 	section.SecPartenaires {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 		align-items: center;
+		height: 50vh;
 	}
+
 	.Partenaires {
 		order: 1;
 	}
@@ -130,12 +284,21 @@ form.Schedule > * {
 		justify-content: space-between;
 		text-align: left;
 	}
-}
 
-@media screen and (min-width: 1023px) {
-	header {
+	.Easy-to-implement,
+	.Simple-UI-e-UX {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-template-areas: 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.Simple-UI-e-UX-Text {
+		order: -1;
+	}
+
+	.Schedule-a-demo {
+		flex-direction: row;
 	}
 }

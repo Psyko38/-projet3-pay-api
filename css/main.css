@@ -8,6 +8,10 @@
 	--Charm-Pink-Actives: #da6d97;
 }
 
+body {
+	background-color: #edf3f8;
+}
+
 header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
