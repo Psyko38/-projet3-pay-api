@@ -4,36 +4,162 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=7, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/normalize.css" />
 		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/components/formElement.css" />
+		<link rel="stylesheet" href="../css/components/font.css" />
+		<link rel="stylesheet" href="../css/components/buttons.css" />
+		<link rel="stylesheet" href="../css/pages/pricing.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
-				<a href="/index.html"
-					><img src="assets/LogoPayAPI.svg" alt="Logo Of PayAPI" />
+				<a href="../index.html"
+					><img src="../assets/LogoPayAPI.svg" alt="Logo Of PayAPI" />
 				</a>
 				<ul>
 					<li>
-						<a class="link" href="page/pricing.html">Pricing</a>
+						<a class="link" href="../page/pricing.html">Pricing</a>
 					</li>
 					<li>
-						<a class="link" href="page/about.html">About</a>
+						<a class="link" href="../page/about.html">About</a>
 					</li>
 					<li>
-						<a class="link" href="page/contact.html">Contact</a>
+						<a class="link" href="../page/contact.html">Contact</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="header-p2">
-				<button class="Demo">Schedule a Demo</button>
+				<button class="btn-primary-light">Schedule a Demo</button>
 				<button class="BurgerKing">
-					<img src="assets/BurgerMenu.svg" alt="BurgerMenu" />
+					<img src="../assets/BurgerMenu.svg" alt="BurgerMenu" />
 				</button>
 			</div>
 		</header>
-		<main></main>
-		<footer></footer>
+		<main>
+			<section class="Title">
+				<h1>Pricing</h1>
+			</section>
+			<section class="pay">
+				<section class="plant">
+					<h2>Free Plan</h2>
+					<p>
+						Build and test using our core set of products with up to
+						100 API requests
+					</p>
+					<h3>$0.00</h3>
+					<hr />
+					<section class="plant-Box">
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Transactions</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Auth</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Identity</p>
+						<div></div>
+						<p class="NoChek">Investments</p>
+						<div></div>
+						<p class="NoChek">Assets</p>
+						<div></div>
+						<p class="NoChek">Liabilities</p>
+						<div></div>
+						<p class="NoChek">Income</p>
+					</section>
+					<hr />
+					<button class="btn-secondary-dark">Request Access</button>
+				</section>
+				<section class="plant">
+					<h2>Basic Plan</h2>
+					<p>
+						Launch your project with unlimited requests and no
+						contractual minimums
+					</p>
+					<h3>$249.00</h3>
+					<hr />
+					<section class="plant-Box">
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Transactions</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Auth</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Identity</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Investments</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Assets</p>
+						<div></div>
+						<p class="NoChek">Liabilities</p>
+						<div></div>
+						<p class="NoChek">Income</p>
+					</section>
+					<hr />
+					<button class="btn-secondary-dark">Request Access</button>
+				</section>
+				<section class="plant">
+					<h2>Premium Plan</h2>
+					<p>
+						Get tailored solutions, volume pricing, and dedicated
+						support for your team
+					</p>
+					<h3>$499.00</h3>
+					<hr />
+					<section class="plant-Box">
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Transactions</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Auth</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Identity</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Investments</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Assets</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Liabilities</p>
+						<img src="../assets/Chek.svg" alt="Chek" />
+						<p class="Chek">Income</p>
+					</section>
+					<hr />
+					<button class="btn-secondary-dark">Request Access</button>
+				</section>
+			</section>
+
+			<section class="Schedule-a-demo">
+				<h2>Ready to start?</h2>
+				<form class="Schedule" action="Schedule">
+					<label for="Email"></label>
+					<input
+						class="fe-text-field"
+						type="email"
+						id="Email"
+						name="Email"
+						placeholder="Enter email address"
+					/>
+					<button type="submit" class="btn-primary-light">
+						Schedule a Demo
+					</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<img src="../assets/LogoPayApi-2.svg" alt="PayAPI logo" />
+			<ul>
+				<li>
+					<a class="link" href="../page/pricing.html">Pricing</a>
+				</li>
+				<li>
+					<a class="link" href="../page/about.html">About</a>
+				</li>
+				<li>
+					<a class="link" href="../page/contact.html">Contact</a>
+				</li>
+			</ul>
+			<div class="SocialMedia">
+				<img src="../assets/LogoFaceDeBook.svg" alt="FaceBook" />
+				<img src="../assets/LogoHater.svg" alt="Tweeter / X" />
+				<img src="../assets/LogoLinkIN.svg" alt="LinkdIN" />
+			</div>
+		</footer>
 	</body>
 </html>

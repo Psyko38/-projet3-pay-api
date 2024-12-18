@@ -1,8 +1,8 @@
-.checkbox.normal {
-	background-color: var(--San-Juan-Blue);
-	opacity: 25%;
-}
-
-.checkbox.normal:hover {
-	background-color: var(--Dark-Pink);
+form > label,
+form > label > input,
+form > label > textarea {
+	background-color: transparent;
+	border: 0;
+	resize: none;
+	width: 100%;
 }

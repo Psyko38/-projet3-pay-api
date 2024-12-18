@@ -17,7 +17,7 @@
 
 .btn-secondary-light {
 	background-color: transparent;
-	color: var(--Link-Water-White);
+
 	border: 1px var(--Link-Water-White) solid;
 	border-radius: 999px;
 	padding: 5px 20px;
@@ -25,7 +25,14 @@
 
 .btn-secondary-light:hover {
 	background-color: var(--Link-Water-White);
-	color: transparent;
+}
+
+.btn-secondary-light:hover > a {
+	color: var(--Mirage-Blue);
+}
+
+.btn-secondary-light > a {
+	color: var(--Link-Water-White);
 }
 
 .btn-secondary-light:disabled {
@@ -33,17 +40,16 @@
 }
 
 .btn-secondary-dark {
-	border: 1px solid var(--San-Juan-Blue);
-	background-color: transparent;
 	color: var(--San-Juan-Blue);
+	background-color: transparent;
+	border: 1px var(--San-Juan-Blue) solid;
 	border-radius: 999px;
-	border: none;
 	padding: 5px 20px;
 }
 
-.btn-secondary-dark {
+.btn-secondary-dark:hover {
 	background-color: var(--San-Juan-Blue);
-	color: transparent;
+	color: var(--Link-Water-White);
 }
 
 .btn-secondary-dark:disabled {

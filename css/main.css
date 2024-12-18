@@ -8,6 +8,12 @@
 	--Charm-Pink-Actives: #da6d97;
 }
 
+.mainInfo > p,
+a {
+	text-decoration: none;
+	color: var(--Light-San-Juan-Blue);
+}
+
 body {
 	background-color: #edf3f8;
 }
@@ -66,6 +72,91 @@ nav > ul > li > a {
 	text-decoration: none;
 }
 
+nav > ul > li > a:hover {
+	font-weight: bolder;
+}
+
+footer {
+	margin-top: 50px;
+	padding: 25px 0px;
+	background-color: var(--Mirage-Blue);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 1fr 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	height: 30vh;
+}
+
+footer > ul > li {
+	list-style: none;
+}
+
+footer > ul > li > a:hover {
+	color: var(--Link-Water-White);
+}
+
+footer > ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SocialMedia > p > a {
+	font-weight: 400;
+}
+
+.SocialMedia > img:hover {
+	filter: brightness(0) saturate(100%) invert(67%) sepia(32%) saturate(2103%)
+		hue-rotate(296deg) brightness(90%) contrast(88%);
+}
+
+.SocialMedia {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 18%;
+}
+
+.Schedule-a-demo {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	padding-top: 10vh;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.Schedule-a-demo > h2 {
+	font-size: 2.133rem;
+}
+
+form.Schedule > label {
+	display: none;
+}
+
+form.Schedule {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+}
+
+form.Schedule > * {
+	border-radius: 300px;
+	border: 0;
+	padding: 15px;
+	width: 100%;
+}
+
+.Schedule > input {
+	background-color: var(--Link-Water-White);
+	box-shadow: 10px 10px 25px -10px #36536b40;
+}
+
 @media screen and (min-width: 768px) {
 	nav > ul {
 		display: unset;
@@ -76,7 +167,6 @@ nav > ul > li > a {
 	}
 
 	header {
-		display: grid;
 		grid-template-columns: 2fr 1fr;
 		grid-template-areas: 1fr;
 	}
@@ -87,5 +177,57 @@ nav > ul > li > a {
 
 	.header-p2 > .BurgerKing {
 		display: none;
+	}
+
+	footer {
+		grid-template-columns: 1fr 1fr 1.5fr;
+		grid-template-areas: 1fr;
+		height: 15vh;
+	}
+
+	.SocialMedia {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 50px;
+		gap: 10%;
+	}
+
+	footer > ul {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	form.Schedule {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		box-shadow: 10px 10px 25px -10px #36536b40;
+		background-color: var(--Link-Water-White);
+		border-radius: 666px;
+	}
+
+	.Schedule > input {
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	footer {
+		grid-template-columns: 1fr 1fr 2fr;
+	}
+
+	nav > ul {
+		width: 50%;
+	}
+
+	.header-p2 {
+		padding-right: 15vh;
+	}
+
+	.plant {
+		flex-direction: row;
 	}
 }

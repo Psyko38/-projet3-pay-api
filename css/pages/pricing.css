@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Display:regular,italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+	color: var(--San-Juan-Blue);
+}
+
+.plant-Box {
+	display: grid;
+	grid-template-columns: repeat(2, 0.1fr);
+	grid-template-rows: repeat(7, 1fr);
+	justify-items: start;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+main {
+	width: 100%;
+}
+
+.Title {
+	text-align: center;
+}
+
+.pay {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: 100%;
+	gap: 50px;
+}
+
+p.Chek,
+p.NoChek {
+	font-family: Public Sans;
+}
+
+p.NoChek {
+	opacity: 50%;
+}
+
+.plant {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.plant > p {
+	font-family: Roboto;
+	opacity: 70%;
+	text-align: center;
+}
+
+.plant > h2 {
+	font-family: DM Serif Display;
+	color: var(--Dark-Pink);
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+.plant > h3 {
+	font-family: DM Serif Display;
+	font-size: 56px;
+}
+
+.plant-Box {
+	width: 100%;
+}
+
+hr {
+	width: 80%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+	.pay {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.plant > p {
+		text-align: left;
+	}
+
+	.pay {
+		align-items: flex-start;
+	}
+}

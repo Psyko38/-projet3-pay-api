@@ -4,36 +4,151 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=7, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/normalize.css" />
 		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/components/formElement.css" />
+		<link rel="stylesheet" href="../css/components/font.css" />
+		<link rel="stylesheet" href="../css/components/buttons.css" />
+		<link rel="stylesheet" href="../css/components/checkbox.css" />
+		<link rel="stylesheet" href="../css/pages/contact.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
-				<a href="/index.html"
-					><img src="assets/LogoPayAPI.svg" alt="Logo Of PayAPI" />
+				<a href="../index.html"
+					><img src="../assets/LogoPayAPI.svg" alt="Logo Of PayAPI" />
 				</a>
 				<ul>
 					<li>
-						<a class="link" href="page/pricing.html">Pricing</a>
+						<a class="link" href="../page/pricing.html">Pricing</a>
 					</li>
 					<li>
-						<a class="link" href="page/about.html">About</a>
+						<a class="link" href="../page/about.html">About</a>
 					</li>
 					<li>
-						<a class="link" href="page/contact.html">Contact</a>
+						<a class="link" href="../page/contact.html">Contact</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="header-p2">
-				<button class="Demo">Schedule a Demo</button>
+				<button class="btn-primary-light">Schedule a Demo</button>
 				<button class="BurgerKing">
-					<img src="assets/BurgerMenu.svg" alt="BurgerMenu" />
+					<img src="../assets/BurgerMenu.svg" alt="BurgerMenu" />
 				</button>
 			</div>
 		</header>
-		<main></main>
-		<footer></footer>
+		<main>
+			<h2 class="titlee">
+				Submit a help request and we’ll get in touch shortly.
+			</h2>
+			<section class="main2">
+				<section class="Request">
+					<form action="contact" class="Form">
+						<label for="Name">
+							<input type="text" name="Name" placeholder="Name" />
+						</label>
+
+						<label for="Email">
+							<input
+								type="email"
+								name="Email"
+								placeholder="Email Address"
+							/>
+							<span class="error">This field can’t be empty</span>
+						</label>
+
+						<label for="Company">
+							<input
+								type="text"
+								name="Company"
+								placeholder="Company Name"
+							/>
+						</label>
+
+						<label for="Title">
+							<input
+								type="text"
+								name="Title"
+								placeholder="Title"
+							/>
+						</label>
+
+						<label for="Message">
+							<textarea
+								name="Message"
+								id="contactMessage"
+								placeholder="Message"
+							></textarea>
+						</label>
+
+						<label for="ChekBox" class="ChekBox">
+							<input type="checkbox" name="ChekBox" />Stay
+							up-to-date with company announcements and updates to
+							our API
+						</label>
+						<label for="Submit">
+							<input
+								type="submit"
+								name="Submit"
+								class="btn-secondary-dark"
+							/>
+						</label>
+					</form>
+				</section>
+				<section class="Innovateur">
+					<h3>
+						Join the thousands of innovators already building with
+						us
+					</h3>
+					<div class="Mark">
+						<img src="../assets/LogoTesla.svg" alt="Tesla" />
+						<img
+							src="../assets/LogoMicrosoft.svg"
+							alt="Microsoft"
+						/>
+						<img src="../assets/LogoHP.svg" alt="HP" />
+						<img src="../assets/LogoOracle.svg" alt="Oracle" />
+						<img src="../assets/LogoGoogle.svg" alt="Google" />
+						<img src="../assets/LogoNvidia.svg" alt="Nvidia" />
+					</div>
+				</section>
+			</section>
+			<section class="Schedule-a-demo">
+				<h2>Ready to start?</h2>
+				<form class="Schedule" action="Schedule">
+					<label for="Email"></label>
+					<input
+						class="fe-text-field"
+						type="email"
+						id="Email"
+						name="Email"
+						placeholder="Enter email address"
+					/>
+					<button type="submit" class="btn-primary-light">
+						Schedule a Demo
+					</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<img src="../assets/LogoPayApi-2.svg" alt="PayAPI logo" />
+			<ul>
+				<li>
+					<a class="link" href="../page/pricing.html">Pricing</a>
+				</li>
+				<li>
+					<a class="link" href="../page/about.html">About</a>
+				</li>
+				<li>
+					<a class="link" href="../page/contact.html">Contact</a>
+				</li>
+			</ul>
+			<div class="SocialMedia">
+				<img src="../assets/LogoFaceDeBook.svg" alt="FaceBook" />
+				<img src="../assets/LogoHater.svg" alt="Tweeter / X" />
+				<img src="../assets/LogoLinkIN.svg" alt="LinkdIN" />
+			</div>
+		</footer>
 	</body>
 </html>
